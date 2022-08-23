@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  hdns-ip-updater:
+    build: ./src
+    restart: always
+    environment:
+      - SLEEP_TIMER = 600
+    volumes:
+      - ./src/config.json:/app/config.json
