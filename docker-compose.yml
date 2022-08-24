@@ -3,7 +3,7 @@ version: "3"
 services:
   hdns-ip-updater:
     build: ./src
-    restart_policy: always
+    restart: always
     environment:
       - SLEEP_TIMER = 600
       - HDNS_TOKEN
