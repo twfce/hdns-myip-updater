@@ -5,7 +5,7 @@ services:
     build: ./src
     restart: always
     environment:
-      - SLEEP_TIMER = 600
+      - SLEEP_TIMER=600
       - HDNS_TOKEN
     volumes:
       - ./src/config.json:/app/config.json
