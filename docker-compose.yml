@@ -3,8 +3,9 @@ version: "3"
 services:
   hdns-ip-updater:
     build: ./src
-    restart: always
+    restart_policy: always
     environment:
       - SLEEP_TIMER = 600
+      - HDNS_TOKEN
     volumes:
       - ./src/config.json:/app/config.json
