@@ -34,7 +34,6 @@ def checkIpChanged(currentIP):
         f = open(".remember", "r")
         lastIP = f.read()
         f.close()
-        currentIP = report['external_ip']
 
         if lastIP == currentIP:
             print ("{color}{timestamp} | [*] IP did not change. It's still {IP}{reset}".format(color=fg(3), timestamp=datetime.now(), IP=currentIP, reset=attr(0)))
