@@ -65,7 +65,7 @@ if __name__ == "__main__":
         exit()
     
     SLEEP_TIMER = os.environ["SLEEP_TIMER"]
-    CONFIG = json.loads(open("CONFIG.json").read())
+    CONFIG = json.loads(open("config.json").read())
 
     hdnsAPI = hdns(HDNS_TOKEN)
     myipAPI = myip()
