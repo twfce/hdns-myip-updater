@@ -54,7 +54,7 @@ def checkIpChanged(currentIP):
 
 def main():
     while True:        
-        checkIpChanged(myipAPI.requestIP())
+        checkIpChanged(myipAPI.requestIP()["ip"])
         sleep(SLEEP_TIMER)
 
 if __name__ == "__main__":
