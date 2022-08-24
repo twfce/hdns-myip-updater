@@ -9,8 +9,6 @@ from colored import fg, attr
 from hdns import hdns
 from myip import myip
 
-import paho.mqtt.client as mqtt
-
 def updateDNSRecords(ip):    
     print ("{color}{timestamp} | [*] Requesting all zones{reset}".format(color=fg(3), timestamp=datetime.now(), reset=attr(0)))
     zones = [zone for zone in hdnsAPI.getAllZones() if zone["name"] in CONFIG["zones"]] 
