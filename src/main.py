@@ -64,7 +64,7 @@ if __name__ == "__main__":
         print ("{color}{timestamp} | [X] You need to specify env variable HDNS_TOKEN!{reset}".format(color=fg(1), timestamp=datetime.now(), reset=attr(0)))
         exit()
     
-    SLEEP_TIMER = os.environ["SLEEP_TIMER"]
+    SLEEP_TIMER = int(os.environ["SLEEP_TIMER"])
     CONFIG = json.loads(open("config.json").read())
 
     hdnsAPI = hdns(HDNS_TOKEN)
