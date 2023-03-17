@@ -1,4 +1,5 @@
 # Hetzner DNS - IP Updater (DDNS) 🕸️
+[![Docker - Build & Push](https://github.com/twfce/hdns-myip-updater/actions/workflows/docker-image.yml/badge.svg)](https://github.com/twfce/hdns-myip-updater/actions/workflows/docker-image.yml)
 
 Simple script to update DNS entries on Hetzner DNS service. At the moment it only works for A records.
 
